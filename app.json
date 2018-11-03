@@ -2,7 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/test/test"
+    "pages/classic/classic"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,8 +24,8 @@
         "text": "日志"
       },
       {
-        "pagePath": "pages/test/test",
-        "text": "测试"
+        "pagePath": "pages/classic/classic",
+        "text": "经典"
       }
     ]
   },

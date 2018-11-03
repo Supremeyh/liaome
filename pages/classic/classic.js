@@ -1,4 +1,4 @@
-// pages/test/test.js
+
 import { HTTP } from '../../utils/http.js'
 
 let http = new HTTP()
