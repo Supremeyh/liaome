@@ -24,7 +24,7 @@ class HTTP{
         let code = res.statusCode.toString()
         console.log(res.data)
         if (code.startsWith('2')) {
-          params.success(res)
+          params.success && params.success(res)
         } else{
           let error_code  = res.data.error_code
           this._show_error(error_code)

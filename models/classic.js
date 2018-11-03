@@ -1,6 +1,6 @@
 import { HTTP } from '../utils/http.js'
 
-class classicModel extends HTTP {
+class ClassicModel extends HTTP {
   getLatest(scb){
     this.request({
       url: 'classic/latest',
@@ -12,4 +12,4 @@ class classicModel extends HTTP {
   }
 }
 
-export { classicModel }
+export { ClassicModel }
