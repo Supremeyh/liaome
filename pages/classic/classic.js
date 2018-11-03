@@ -17,7 +17,9 @@ Page({
    */
   onLoad: function (options) {
    classic.getLatest(res => {
-
+     this.setData({
+       classicData: res.data
+     })
    })
   
   },
