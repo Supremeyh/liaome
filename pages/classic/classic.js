@@ -1,7 +1,7 @@
 
-import { HTTP } from '../../utils/http.js'
+import { classicModel } from '../../models/classic.js'
 
-let http = new HTTP()
+let classic = new classicModel()
 
 Page({
 
@@ -16,29 +16,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    http.request({
-      url: 'classic/latest',
-      success: (res) => {
-        console.log(res)
-      }
+   classic.getLatest(res => {
 
-    })
-
-    // wx.request({
-    //   method: 'GET',
-    //   url: 'http://bl.7yue.pro/v1/classic/latest',
-    //   header: {
-    //     'content-type': 'application/json',
-    //     'appkey': '98HcsgdJ3mx4Ufcm'
-    //   },
-    //   dataType: 'json',
-    //   responseType: 'text',
-    //   success: (res) => {
-    //     console.log(res)
-    //     console.log(this)
-    //   }
-
-    // })
+   })
   
   },
 
