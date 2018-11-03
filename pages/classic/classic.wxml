@@ -1,2 +1,3 @@
+<cmp-epsoide index="{{classicData.index}}"></cmp-epsoide>
 <cmp-like bindlike="onLike" like="{{classicData.like_status}}" count="{{classicData.fav_nums}}"/>
 <cmp-movie img="{{classicData.img}}" content="{{classicData.content}}"></cmp-movie> 
