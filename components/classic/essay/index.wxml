@@ -1,2 +1,7 @@
-<!--components/classic/essay/index.wxml-->
-<text>components/classic/essay/index.wxml</text>
+<view class="classic-container">
+  <!-- <image class="classic-img" src="{{img}}"></image> -->
+  <image class="classic-img" src="/images/EatDrinkManWoman.png"></image>
+  <image class="tag" src="/images/essay_tag.png"></image>
+  <!-- <text class="content">{{content}}</text> -->
+  <text class="content">诗句</text>
+</view>

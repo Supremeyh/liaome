@@ -23,10 +23,35 @@ Page({
     likeModel.like(behavior, this.classicData.id, this.classicData.type)
 
   },
-  onNext: function(event){
+
+  onPrevious: function (event) {
+    // let index = this.data.classicData.index
+    // classicModel.getPrevious(index, (res) =>{
+    //   this.setData({
+    //     classicData: res,
+    //     latest: classicModel.isLatest(res.index),
+    //     first: classicModel.isFirst(res.index)
+    //   })
+    // })
+
+    this._updateClassic('previous')
 
   },
-  onPrevious: function (event) {
+
+  onNext: function (event) {
+    this._updateClassic('next')
+
+  },
+
+  _updateClassic: function(nextOrPrevious){
+    let index = this.data.classicData.index
+    classicModel.getClassic(index, nextOrPrevious, (res) => {
+      this.setData({
+        classicData: res,
+        latest: classicModel.isLatest(res.index),
+        first: classicModel.isFirst(res.index)
+      })
+    })
 
   },
   /**
