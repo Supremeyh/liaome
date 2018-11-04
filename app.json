@@ -8,7 +8,7 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#0084FF",
     "backgroundColor": "#eee",
-    "navigationBarTitleText": "有聊",
+    "navigationBarTitleText": "聊我",
     "navigationBarTextStyle": "white",
     "navigationStyle": "default",
     "onReachBottomDistance": 50
