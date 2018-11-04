@@ -39,7 +39,7 @@ Component({
 
     this.setData({
       year: year,
-      month: this.month[month]
+      month: this.data.months[month]
     })
   },
 
