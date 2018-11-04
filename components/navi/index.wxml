@@ -1,0 +1,5 @@
+<view class="container">
+  <image class="icon" bindtap="onLeft" src="{{latest?disLeftSrc:leftSrc}}"></image>
+  <text class="title" >饮食男女</text>
+  <image class="icon" bindtap="onRight" src="{{first?disRightSrc:rightSrc}}"></image>
+</view>

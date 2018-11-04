@@ -1,5 +1,8 @@
-<view class="header">
-  <cmp-epsoide class="epsoide" index="{{classicData.index}}"></cmp-epsoide>
-  <cmp-like class="like" bindlike="onLike" like="{{classicData.like_status}}" count="{      {classicData.fav_nums}}" />
+<view class="container">
+  <view class="header">
+    <cmp-epsoide class="epsoide" index="{{classicData.index}}"></cmp-epsoide>
+    <cmp-like class="like" bindlike="onLike" like="{{classicData.like_status}}" count="{      {classicData.fav_nums}}" />
+  </view>
+  <cmp-movie class="movie" img="{{classicData.img}}" content="{{classicData.content}}"></cmp-movie>
+  <cmp-navi bindleft="onNext" bindright="onPrevious" class="navi" title="{{classicData.title}}" frist="{{frist}}" latest="{{latest}}"></cmp-navi>
 </view>
-<cmp-movie img="{{classicData.img}}" content="{{classicData.content}}"></cmp-movie>

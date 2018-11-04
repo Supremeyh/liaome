@@ -11,7 +11,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    classicData: null
+    classicData: null,
+    latest: true,
+    first: false
   
   },
 
@@ -21,7 +23,12 @@ Page({
     likeModel.like(behavior, this.classicData.id, this.classicData.type)
 
   },
+  onNext: function(event){
 
+  },
+  onPrevious: function (event) {
+
+  },
   /**
    * 生命周期函数--监听页面加载
    */
